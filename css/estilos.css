@@ -1,0 +1,226 @@
+/* =========================
+   VARIABLES DE COLOR
+   ========================= */
+
+:root {
+    --azul-oscuro: #0f172a;
+    --azul-tecnologico: #0ea5e9;
+    --azul-hover: #0284c7;
+    --gris-fondo: #f1f5f9;
+    --gris-texto: #334155;
+    --gris-suave: #64748b;
+    --blanco: #ffffff;
+    --borde: #dbe4ee;
+}
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--gris-fondo);
+    color: var(--gris-texto);
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin-top: 8px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   MENÚ DE NAVEGACIÓN
+   ========================= */
+
+nav {
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--borde);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--azul-tecnologico);
+    color: var(--blanco);
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   SECCIONES Y TARJETAS
+   ========================= */
+
+section {
+    background-color: var(--blanco);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TÍTULOS
+   ========================= */
+
+h2 {
+    color: var(--azul-oscuro);
+    border-left: 5px solid var(--azul-tecnologico);
+    padding-left: 12px;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--azul-hover);
+}
+
+
+/* =========================
+   ENLACES
+   ========================= */
+
+a {
+    color: var(--azul-tecnologico);
+}
+
+a:hover {
+    color: var(--azul-hover);
+}
+
+
+/* =========================
+   IMAGEN DE PERFIL
+   ========================= */
+
+img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid var(--azul-tecnologico);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+}
+
+
+/* =========================
+   LÍNEAS SEPARADORAS
+   ========================= */
+
+hr {
+    border: none;
+    border-top: 1px solid var(--borde);
+    margin: 30px 0;
+}
+
+
+/* =========================
+   CANVA
+   ========================= */
+
+.canva-container {
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e0f2fe;
+    border: 2px dashed var(--azul-tecnologico);
+    border-radius: 10px;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    background-color: var(--azul-oscuro);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
