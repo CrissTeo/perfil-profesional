@@ -368,7 +368,7 @@ footer {
 
 .idioma-item {
     display: grid;
-    grid-template-columns: 1fr 220px;
+    grid-template-columns: 1fr 240px;
     gap: 35px;
     align-items: center;
     padding: 20px 0;
@@ -386,11 +386,13 @@ footer {
 
 .idioma-logo img {
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     height: auto;
+
     object-fit: contain;
 
     margin: 0;
+    padding: 0;
 
     border: none;
     border-radius: 0;
@@ -398,6 +400,9 @@ footer {
 
     display: block;
 }
+
+
+/* Responsive para pantallas pequeñas */
 
 @media (max-width: 768px) {
 
@@ -410,7 +415,7 @@ footer {
     }
 
     .idioma-logo img {
-        max-width: 180px;
+        max-width: 200px;
         margin: 0 auto;
     }
 }
