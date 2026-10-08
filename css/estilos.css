@@ -363,22 +363,25 @@ footer {
     display: block;
 }
 /* =========================
-   IDIOMAS
+   SECCIÓN DE IDIOMAS
    ========================= */
 
 .idioma-item {
-    display: grid;
-    grid-template-columns: 1fr 240px;
-    gap: 35px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: 40px;
     padding: 20px 0;
 }
 
 .idioma-contenido {
+    flex: 1;
     min-width: 0;
 }
 
 .idioma-logo {
+    width: 230px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,8 +391,7 @@ footer {
     width: 100%;
     max-width: 220px;
     height: auto;
-
-    object-fit: contain;
+    display: block;
 
     margin: 0;
     padding: 0;
@@ -398,19 +400,21 @@ footer {
     border-radius: 0;
     box-shadow: none;
 
-    display: block;
+    object-fit: contain;
 }
 
 
-/* Responsive para pantallas pequeñas */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
     .idioma-item {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .idioma-logo {
+        width: 100%;
         margin-top: 15px;
     }
 
