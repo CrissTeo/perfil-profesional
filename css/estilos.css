@@ -362,3 +362,55 @@ footer {
 
     display: block;
 }
+/* =========================
+   IDIOMAS
+   ========================= */
+
+.idioma-item {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 35px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.idioma-contenido {
+    min-width: 0;
+}
+
+.idioma-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idioma-logo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+
+    margin: 0;
+
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .idioma-item {
+        grid-template-columns: 1fr;
+    }
+
+    .idioma-logo {
+        margin-top: 15px;
+    }
+
+    .idioma-logo img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+}
