@@ -330,21 +330,18 @@ footer {
    ========================= */
 
 .experiencia-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 220px;
     gap: 35px;
+    align-items: center;
     padding: 20px 0;
 }
 
 .experiencia-contenido {
-    flex: 1;
     min-width: 0;
 }
 
 .experiencia-logo {
-    width: 220px;
-    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,33 +349,16 @@ footer {
 
 .experiencia-logo img {
     width: 100%;
-    max-width: 210px;
+    max-width: 200px;
     height: auto;
+
     object-fit: contain;
 
     margin: 0;
+
     border: none;
     border-radius: 0;
     box-shadow: none;
-}
 
-
-/* Adaptación para celulares */
-
-@media (max-width: 768px) {
-
-    .experiencia-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .experiencia-logo {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .experiencia-logo img {
-        max-width: 180px;
-        margin: 0 auto;
-    }
+    display: block;
 }
